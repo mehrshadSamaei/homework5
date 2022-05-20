@@ -22,4 +22,16 @@ public class DatabaseUtil {
 
         this.connection = DriverManager.getConnection(url , userName , password);
     }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }

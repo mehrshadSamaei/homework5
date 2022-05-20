@@ -8,6 +8,8 @@ public class User extends Base{
     private String mobileNum;
     private Address address;
 
+
+
     public String getFullName() {
         return fullName;
     }
@@ -55,4 +57,18 @@ public class User extends Base{
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id" + getId() + '\'' +
+                "fullName='" + fullName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", mobileNum='" + mobileNum + '\'' +
+                ", address=" + address +
+                '}';
+    }
+
 }

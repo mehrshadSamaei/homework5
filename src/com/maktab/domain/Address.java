@@ -6,6 +6,16 @@ public class Address {
     private String street;
     private String postalCode;
 
+    public Address() {
+    }
+
+    public Address(String state, String city, String street, String postalCode) {
+        this.state = state;
+        this.city = city;
+        this.street = street;
+        this.postalCode = postalCode;
+    }
+
     public String getState() {
         return state;
     }
@@ -36,5 +46,15 @@ public class Address {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "state='" + state + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                '}';
     }
 }
